@@ -31,6 +31,17 @@ The project is implemented using **Python** and includes a **Flask-based web int
 ---
 
 ## Project Structure
+    ├── app.py                     # Flask web application entry point
+    ├── password_analyser.py       # Core password strength prediction logic
+    ├── py2.py                     # Feature extraction & tensor analysis (experiment)
+    ├── py3.py                     # Alternative / optimized tensor implementation
+    ├── templates/
+    │   └── index.html             # Frontend UI for password input
+    ├── datasets/
+    │   ├── 10000_common_passwords.csv
+    │   └── rockyou.csv
+    ├── FINAL__MINI_PROJECT_SUBMISSION_REPORT.pdf
+    ├── README.md
 
 ---
 
@@ -53,6 +64,30 @@ The project is implemented using **Python** and includes a **Flask-based web int
 5. Distance from strength cluster centers is computed
 6. Strength label and confidence score are generated
 7. Weakness flags and explanations are returned
+
+---
+
+## Sample Output
+**Input Password:** `P@ssw0rd2024!`
+
+**Output:**
+- Strength: **Medium**
+- Confidence: **72%**
+- Flags:
+  - Contains dictionary words
+- Explanation:
+  - Length
+  - Character class diversity
+  - Semantic word presence
+
+---
+
+## Dataset Information
+- **10000 Common Passwords Dataset**
+- **RockYou leaked password dataset**
+
+> These datasets are used **strictly for academic and research purposes**  
+> No offensive security, cracking, or misuse is intended.
 
 ---
 
